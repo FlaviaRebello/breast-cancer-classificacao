@@ -1,0 +1,166 @@
+{
+  "base": "UCI Breast Cancer (id 14)",
+  "data_treinamento": "2026-11-18T12:01:44",
+  "versao_scikit_learn": "1.9.1",
+  "semente": 42,
+  "tamanho_teste": 0.2,
+  "melhor_modelo": "Árvore de Decisão",
+  "hiperparametros": {
+    "class_weight": null,
+    "max_depth": 2,
+    "min_samples_leaf": 1
+  },
+  "acuracia_validacao_cruzada_aninhada": 0.760450885668277,
+  "acuracia_teste": 0.7068965517241379,
+  "acuracia_baseline": 0.7027972027972028,
+  "avaliacao": {
+    "acertos_teste": 41,
+    "n_teste": 58,
+    "ic95": [
+      0.5798709910321587,
+      0.808218172090378
+    ],
+    "relatorio": {
+      "no-recurrence-events": {
+        "precision": 0.7307692307692307,
+        "recall": 0.926829268292683,
+        "f1-score": 0.8172043010752689,
+        "support": 41.0
+      },
+      "recurrence-events": {
+        "precision": 0.5,
+        "recall": 0.17647058823529413,
+        "f1-score": 0.2608695652173913,
+        "support": 17.0
+      },
+      "accuracy": 0.7068965517241379,
+      "macro avg": {
+        "precision": 0.6153846153846154,
+        "recall": 0.5516499282639885,
+        "f1-score": 0.53903693314633,
+        "support": 58.0
+      },
+      "weighted avg": {
+        "precision": 0.6631299734748011,
+        "recall": 0.7068965517241379,
+        "f1-score": 0.654140671599684,
+        "support": 58.0
+      }
+    },
+    "matriz_confusao": [
+      [
+        38,
+        3
+      ],
+      [
+        14,
+        3
+      ]
+    ],
+    "classes": [
+      "no-recurrence-events",
+      "recurrence-events"
+    ]
+  },
+  "atributos": [
+    "age",
+    "menopause",
+    "tumor-size",
+    "inv-nodes",
+    "node-caps",
+    "deg-malig",
+    "breast",
+    "breast-quad",
+    "irradiat"
+  ],
+  "opcionais": [
+    "node-caps",
+    "breast-quad"
+  ],
+  "dominios": {
+    "age": [
+      "10-19",
+      "20-29",
+      "30-39",
+      "40-49",
+      "50-59",
+      "60-69",
+      "70-79",
+      "80-89",
+      "90-99"
+    ],
+    "menopause": [
+      "lt40",
+      "ge40",
+      "premeno"
+    ],
+    "tumor-size": [
+      "0-4",
+      "5-9",
+      "10-14",
+      "15-19",
+      "20-24",
+      "25-29",
+      "30-34",
+      "35-39",
+      "40-44",
+      "45-49",
+      "50-54",
+      "55-59"
+    ],
+    "inv-nodes": [
+      "0-2",
+      "3-5",
+      "6-8",
+      "9-11",
+      "12-14",
+      "15-17",
+      "18-20",
+      "21-23",
+      "24-26",
+      "27-29",
+      "30-32",
+      "33-35",
+      "36-39"
+    ],
+    "node-caps": [
+      "yes",
+      "no"
+    ],
+    "deg-malig": [
+      1,
+      2,
+      3
+    ],
+    "breast": [
+      "left",
+      "right"
+    ],
+    "breast-quad": [
+      "left_up",
+      "left_low",
+      "right_up",
+      "right_low",
+      "central"
+    ],
+    "irradiat": [
+      "yes",
+      "no"
+    ]
+  },
+  "moda_treino": {
+    "age": "50-59",
+    "menopause": "premeno",
+    "tumor-size": "30-34",
+    "inv-nodes": "0-2",
+    "node-caps": "no",
+    "deg-malig": 2,
+    "breast": "left",
+    "breast-quad": "left_low",
+    "irradiat": "no"
+  },
+  "interpretacao_classes": {
+    "no-recurrence-events": "sem indicativo de recorrência do câncer de mama",
+    "recurrence-events": "indicativo de RECORRÊNCIA do câncer de mama"
+  }
+}
